@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заметки</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    <div class="container w-50 pt-5">
+      <h1>Заметки</h1>
+
+      <input
+        type="text"
+        class="form-control mb-2"
+        placeholder="Введите название"
+        id="title"
+      />
+
+      <button class="btn btn-outline-info w-100 mb-2" id="create">
+        Добавить
+      </button>
+
+      <ul class="list-group list-group-flush" id="list">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>Название</span>
+          <span class="d-flex gap-3"
+            ><span id="success" class="btn btn-small btn-success">&check;</span
+            ><span id="danger" class="btn btn-small btn-danger">&times;</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
